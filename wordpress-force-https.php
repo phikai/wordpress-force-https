@@ -11,14 +11,8 @@
 
 #http://yoast.com/wordpress-ssl-setup/
 function pr_force_https () {
-  if ( is_ssl() && !is_admin() ) {
-    if ( 0 === strpos($_SERVER['REQUEST_URI'], 'http') ) {
-      wp_redirect(preg_replace('|^https://|', 'http://', $_SERVER['REQUEST_URI']), 301 );
-      exit();
-    } else {
-      wp_redirect('http://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'], 301 );
-      exit();
-    }
+  if ( !is_ssl() ) {
+    wp_redirect('https://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'], 301 );
   }
 }
 add_action ( 'template_redirect', 'pr_force_https', 1 );
