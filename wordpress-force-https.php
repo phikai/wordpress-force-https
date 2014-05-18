@@ -1,13 +1,13 @@
 <?php
 
 /*
- * Plugin Name: WordPress Force HTTPS
- * Plugin URI: https://github.com/phikai/wordpress-force-https
- * Description: Forces all of the things to HTTPS
- * Author: A. Kai Armstrong
- * Author URI: http://www.kaiarmstrong.com
- * Version: 0.1.1
- * */
+Plugin Name: WordPress Force HTTPS
+Plugin URI: https://github.com/phikai/wordpress-force-https
+Description: Forces all of the things to HTTPS
+Author: A. Kai Armstrong
+Author URI: http://www.kaiarmstrong.com
+Version: 0.1.1
+*/
 
 function toz_force_https () {
   if ( !is_ssl() ) {
