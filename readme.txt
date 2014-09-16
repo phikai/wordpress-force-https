@@ -2,8 +2,8 @@
 Contributors: phikai
 Tags: ssl, https, http, secure
 Requires at least: 3.5
-Tested up to: 3.9.1
-Stable tag: 0.1.1
+Tested up to: 4.0.0
+Stable tag: 0.1.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -35,6 +35,10 @@ This section describes how to install the plugin and get it working.
 None yet!
 
 == Changelog ==
+
+= 0.1.2 =
+* Adding exit();
+* Compatible to 4.0.0
 
 = 0.1.1 =
 * Initial Release
