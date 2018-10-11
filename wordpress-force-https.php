@@ -6,7 +6,7 @@ Plugin URI: https://github.com/phikai/wordpress-force-https
 Description: Forces all of the things to HTTPS
 Author: A. Kai Armstrong
 Author URI: http://www.kaiarmstrong.com
-Version: 0.1.3
+Version: 0.1.4
 */
 
 function toz_force_https () {
